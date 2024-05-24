@@ -153,51 +153,53 @@ function Contact() {
 
                 <Grid container spacing={2}>
                     <Grid item className="col-left">
-                        <Grid item>
-                            <div className="contact-row">பெயர்</div>
-                            <div className="contact-icon-div">
-                                <input
-                                    className="contact-input"
-                                    name="userName"
-                                    value={formData.userName}
-                                    onChange={handleInputChange}
-                                ></input>
-                                <span className="contact-icon material-symbols-outlined">
-                                    person
-                                </span>
-                            </div>
-                            <div
-                                className={
-                                    buttonClicked && !formData.userName
-                                        ? "inValid-input"
-                                        : "valid-input"
-                                }
-                            >
-                                பெயரை சரியாக உள்ளிடவும்
-                            </div>
-                        </Grid>
-                        <Grid item>
-                            <div className="contact-row">தொலைபேசி எண்</div>
-                            <div className="contact-icon-div">
-                                <input
-                                    className="contact-input"
-                                    name="phoneNumber"
-                                    value={formData.phoneNumber}
-                                    onChange={handleInputChange}
-                                ></input>
-                                <span className="contact-icon material-symbols-outlined">
-                                    phone
-                                </span>
-                            </div>
-                            <div
-                                className={
-                                    buttonClicked && !formData.phoneNumber
-                                        ? "inValid-input"
-                                        : "valid-input"
-                                }
-                            >
-                                தொலைபேசி எண்னை சரியாக உள்ளிடவும்
-                            </div>
+                        <Grid item container spacing={{ md: 2 }}>
+                            <Grid item xs={12} md={6}>
+                                <div className="contact-row">பெயர்</div>
+                                <div className="contact-icon-div">
+                                    <input
+                                        className="contact-input"
+                                        name="userName"
+                                        value={formData.userName}
+                                        onChange={handleInputChange}
+                                    ></input>
+                                    <span className="contact-icon material-symbols-outlined">
+                                        person
+                                    </span>
+                                </div>
+                                <div
+                                    className={
+                                        buttonClicked && !formData.userName
+                                            ? "inValid-input"
+                                            : "valid-input"
+                                    }
+                                >
+                                    பெயரை சரியாக உள்ளிடவும்
+                                </div>
+                            </Grid>
+                            <Grid item xs={12} md={6}>
+                                <div className="contact-row">தொலைபேசி எண்</div>
+                                <div className="contact-icon-div">
+                                    <input
+                                        className="contact-input"
+                                        name="phoneNumber"
+                                        value={formData.phoneNumber}
+                                        onChange={handleInputChange}
+                                    ></input>
+                                    <span className="contact-icon material-symbols-outlined">
+                                        phone
+                                    </span>
+                                </div>
+                                <div
+                                    className={
+                                        buttonClicked && !formData.phoneNumber
+                                            ? "inValid-input"
+                                            : "valid-input"
+                                    }
+                                >
+                                    தொலைபேசி எண்னை சரியாக உள்ளிடவும்
+                                </div>
+                            </Grid>
                         </Grid>
                         <Grid item>
                             <div className="contact-row">மின்னஞ்சல்</div>
